@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "secretlogin",
+  "version": "${version}",
+  "name": "SecretLogin",
+  "description": "",
+  "authors": ["Paique", "PedroRok"],
+  "contact": {
+    "homepage": ""  },
+  "license": "MPL-2.0",
+  "icon": "assets/secretlogin/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.paiique.secretlogin.fabric.SecretloginFabric"
+    ],
+    "client": [
+      "com.paiique.secretlogin.fabric.client.SecretloginFabricClient"
+    ]
+  },
+  "mixins": [
+    "secretlogin.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.4",
+    "java": ">=21"
+    ,"architectury": ">=15.0.1"
+    ,"fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

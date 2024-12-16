@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "Mozilla Public License 2.0"
+
+[[mods]]
+modId = "secretlogin"
+version = "${version}"
+displayName = "SecretLogin"
+authors = "Paique, PedroRok"
+description = '''
+
+'''
+#logoFile = ""
+
+[[dependencies.secretlogin]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.secretlogin]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.secretlogin]]
+modId = "architectury"
+type = "required"
+versionRange = "[15.0.1,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "secretlogin.mixins.json"
